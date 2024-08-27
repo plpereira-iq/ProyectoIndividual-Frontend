@@ -24,7 +24,7 @@ const GenerarInforme = () => {
       mainResponsible,
     };
 
-    axios.post('http://localhost:8000/api/reports', reportData)
+    axios.post('https://proyecto-individual-backend.vercel.app/api/reports', reportData)
       .then(response => {
         console.log('Informe generado:', response.data);
         navigate('/mantenimientos-realizados');

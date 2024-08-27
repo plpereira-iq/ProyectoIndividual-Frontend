@@ -24,7 +24,7 @@ const EquiposObsoletos = () => {
       eqResponsible,
     };
 
-    axios.post('http://localhost:8000/api/obsoletes', newObsolete)
+    axios.post('https://proyecto-individual-backend.vercel.app/api/obsoletes', newObsolete)
       .then(response => {
         console.log('Objeto obsoleto creado:', response.data);
         navigate('/equipos-obsoletos');

@@ -9,7 +9,7 @@ const ModificarEquipo = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get(`http://localhost:8000/api/equipments/${id}`)
+    axios.get(`https://proyecto-individual-backend.vercel.app/equipments/${id}`)
       .then(response => {
         setEquipo(response.data);
       })
@@ -19,7 +19,7 @@ const ModificarEquipo = () => {
   }, [id]);
 
   const handleUpdate = () => {
-    axios.put(`http://localhost:8000/api/equipments/${id}`, equipo)
+    axios.put(`https://proyecto-individual-backend.vercel.app/api/equipments/${id}`, equipo)
       .then(response => {
         console.log('Equipo actualizado:', response.data);
         navigate('/equipos-activos');

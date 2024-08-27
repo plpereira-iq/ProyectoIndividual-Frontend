@@ -9,7 +9,7 @@ const ListaMantenimientosPendientes = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get('http://localhost:8000/api/maintenances')
+    axios.get('https://proyecto-individual-backend.vercel.app/api/maintenances')
       .then(response => {
         setMantenimientos(response.data);
       })
@@ -19,7 +19,7 @@ const ListaMantenimientosPendientes = () => {
   }, []);
 
   const handleInformar = (id, eqName, eqCode) => {
-    axios.delete(`http://localhost:8000/api/maintenances/${id}`)
+    axios.delete(`https://proyecto-individual-backend.vercel.app/api/maintenances/${id}`)
       .then(response => {
         navigate(`/informe-mantenimiento/${eqName}/${eqCode}`);
       })

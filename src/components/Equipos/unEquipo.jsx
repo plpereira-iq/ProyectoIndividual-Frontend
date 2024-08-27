@@ -11,7 +11,7 @@ const Equipo = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get(`http://localhost:8000/api/equipments/${id}`)
+    axios.get(`https://proyecto-individual-backend.vercel.app/api/equipments/${id}`)
       .then(response => {
         setEquipo(response.data);
       })
@@ -31,7 +31,7 @@ const Equipo = () => {
       cancelButtonText: 'Cancelar'
     }).then((result) => {
       if (result.isConfirmed) {
-        axios.delete(`http://localhost:8000/api/equipments/${id}`)
+        axios.delete(`https://proyecto-individual-backend.vercel.app/api/equipments/${id}`)
           .then(response => {
             Swal.fire(
               'El equipo ha sido dado de baja.',

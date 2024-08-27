@@ -27,10 +27,10 @@ const ProgramarMantenimiento = () => {
       mainResponsible
     };
 
-    axios.post('http://localhost:8000/api/maintenances', newMaintenance)
+    axios.post('https://proyecto-individual-backend.vercel.app/api/maintenances', newMaintenance)
       .then(response => {
         console.log('Mantenimiento programado:', response.data);
-        return axios.post('http://localhost:8000/api/email/send-email', newMaintenance);
+        return axios.post('https://proyecto-individual-backend.vercel.app/api/email/send-email', newMaintenance);
       })
       .then(response => {
         console.log('Correo enviado:', response.data);

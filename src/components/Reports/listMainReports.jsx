@@ -6,7 +6,7 @@ const ListaMantenimientosRealizados = () => {
   const [reports, setReports] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:8000/api/reports')
+    axios.get('https://proyecto-individual-backend.vercel.app/api/reports')
       .then(response => {
         setReports(response.data);
       })

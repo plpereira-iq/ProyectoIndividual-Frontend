@@ -34,7 +34,7 @@ const Registro = () => {
       userPassword,
     };
 
-    axios.post('http://localhost:8000/api/users', userData)
+    axios.post('https://proyecto-individual-backend.vercel.app/api/users', userData)
       .then(response => {
         console.log('Usuario registrado:', response.data);
         setErrorMessage('');

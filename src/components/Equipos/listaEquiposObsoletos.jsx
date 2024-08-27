@@ -7,7 +7,7 @@ const ListaObsoletos = () => {
   const [obsoletos, setObsoletos] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:8000/api/obsoletes')
+    axios.get('https://proyecto-individual-backend.vercel.app/api/obsoletes')
       .then(response => {
         setObsoletos(response.data);
       })

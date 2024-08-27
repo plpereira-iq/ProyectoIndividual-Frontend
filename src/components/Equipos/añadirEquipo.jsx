@@ -16,7 +16,7 @@ const AñadirEquipo = () => {
 
   const handleAdd = () => {
     const newEquipo = { eqName, eqCode, inDate, inPoint, eqDescription, eqOrigen, inResponsible };
-    axios.post('http://localhost:8000/api/equipments', newEquipo)
+    axios.post('https://proyecto-individual-backend.vercel.app/api/equipments', newEquipo)
       .then(response => {
         console.log('Equipo añadido:', response.data);
         navigate('/equipos-activos');
