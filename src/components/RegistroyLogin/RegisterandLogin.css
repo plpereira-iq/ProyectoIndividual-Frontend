@@ -1,0 +1,23 @@
+.card {
+    max-width: 800px;
+    width: 100%;
+    position: relative;
+    left: 700px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .cardAuth {
+    max-width: 800px;
+    width: 100%;
+    position: relative;
+    left: 700px;
+    margin-top: 5px;
+    margin-bottom: 200px;
+  }
+  .cardRegister {
+    max-width: 600px;
+    width: 100%;
+    position: relative;
+    left: 800px;
+    bottom: 200px;
+  }

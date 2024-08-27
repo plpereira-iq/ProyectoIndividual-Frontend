@@ -1,0 +1,15 @@
+.container {
+    margin-top: 100px;
+    max-width: 800px;
+    width: 100%; 
+  }
+.containerEquipos {
+  margin-top: 300px;
+}
+.containerAñadir {
+  margin-top: 50px;
+}
+.containerObsoletos {
+  position: relative;
+  top: 100px;
+}

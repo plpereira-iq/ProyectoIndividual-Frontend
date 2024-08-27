@@ -1,0 +1,15 @@
+/*Estilos para la barra de navegación*/
+.custom-navbar {
+    padding: 1rem 2rem !important;
+  }
+  
+
+  .nav-item-custom {
+    font-size: 2rem !important;
+    margin-right: 8rem !important;
+  }
+  
+  .nav-item-custom:last-child {
+    margin-right: 8rem !important;
+  }
+  
