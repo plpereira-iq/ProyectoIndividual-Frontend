@@ -9,7 +9,7 @@ const ModificarEquipo = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get(`https://proyecto-individual-backend.vercel.app/equipments/${id}`)
+    axios.get(`https://proyecto-individual-backend.vercel.app/api/equipments/${id}`)
       .then(response => {
         setEquipo(response.data);
       })
