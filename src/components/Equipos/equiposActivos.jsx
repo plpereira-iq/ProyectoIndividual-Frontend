@@ -9,7 +9,7 @@ const EquiposActivos = () => {
   const [filteredEquipos, setFilteredEquipos] = useState([]);
 
   useEffect(() => {
-    axios.get('https://proyecto-individual-backend.vercel.app/equipments')
+    axios.get('https://proyecto-individual-backend.vercel.app/api/equipments')
       .then(response => {
         setEquipos(response.data);
         setFilteredEquipos(response.data);
